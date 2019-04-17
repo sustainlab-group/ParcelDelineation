@@ -1,0 +1,8 @@
+*.npy
+model_weights
+data/overlay
+data/train
+data/train_masks
+data/train_masks_filled
+spacenet
+legacy
