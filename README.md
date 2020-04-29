@@ -36,7 +36,7 @@ https://www.data.gouv.fr/en/datasets/registre-parcellaire-graphique-rpg-contours
 python utils/sample_shp.py   
 ```
 
-4. Reads the shape file to gets the centroid of each polygon (Used as getting coordinates for SENTINEL-2 images). The centroids are the center of the satellite images.
+4. Reads the shape file to gets the centroid of each polygon (Used as getting coordinates for getting satellite images such as SENTINEL-2). The centroids are the center of the satellite images.
 ```
 python utils/get_centroid.py   
 ```
@@ -46,7 +46,7 @@ python utils/get_centroid.py
 python convert_tfrecords_jpeg.py
 ```
 
-5. (b) Gets only polygons that overlap into extracted images (Requires a csv-file with a unique parcel identifier, max lat, max lon, min lat, min long of each extracted image).
+5. (b) Gets only polygons that overlap in bounds of extracted images (Requires a csv-file with a unique parcel identifier, max lat, max lon, min lat, min long of each extracted image).
 
 ```
 python utils/shp2geo.py
